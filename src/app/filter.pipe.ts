@@ -7,8 +7,8 @@ export class FilterPipe implements PipeTransform {
 
   transform(value: any, searchText: any):any {
    
-    return (value || []).filter((search:any)=>{
-      return search.state.toLowerCase().indexOf(searchText.toLowerCase()) > -1
+    return (value || []).filter((value:any)=>{
+      return value.state.toLowerCase().indexOf(searchText.toLowerCase()) > -1
     });
   }
 

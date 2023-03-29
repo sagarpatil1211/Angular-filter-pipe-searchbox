@@ -17,8 +17,9 @@ export class AppComponent implements OnInit {
     this.api.getdata("http://awsmaster.mahamining.com/master/states/GetState").subscribe((result:any)=>{
       // console.log(result.responseData);
       this.states = result.responseData; 
-
     })
   }
+
+ 
 
 }
